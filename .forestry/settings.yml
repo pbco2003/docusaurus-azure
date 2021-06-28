@@ -1,0 +1,26 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: document
+  path: docs
+  label: Test
+- type: directory
+  path: docs
+  label: Docs
+  create: none
+  match: "**/*"
+  new_doc_ext: mdx
+upload_dir: website/static/img
+public_path: "/website/static/img"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  install_dependencies_command: npm install
+  preview_docker_image: forestryio/node:12
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: npm run develop
