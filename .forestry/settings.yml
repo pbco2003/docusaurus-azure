@@ -1,19 +1,18 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: document
   path: docs
   label: Test
-  match: "**/*"
 - type: directory
   path: docs
   label: Docs
-  create: all
+  create: none
   match: "**/*"
-  new_doc_ext: ".mdx"
+  new_doc_ext: mdx
 upload_dir: uploads
 public_path: "/website/static/img"
 front_matter_path: ''
