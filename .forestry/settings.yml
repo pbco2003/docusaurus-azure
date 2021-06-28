@@ -13,7 +13,7 @@ sections:
   create: none
   match: "**/*"
   new_doc_ext: mdx
-upload_dir: uploads
+upload_dir: website/static/img
 public_path: "/website/static/img"
 front_matter_path: ''
 use_front_matter_path: false
